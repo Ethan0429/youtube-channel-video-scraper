@@ -125,7 +125,7 @@ def parse_args():
     parser.add_argument('driver', help='Path to chromedriver executable',
                         type=str)
     parser.add_argument('-o', '--output', help='Output file name/path',
-                        type=str, required=False, metavar='OUTPUT_FILE')
+                        type=str, required=False, metavar='OUTPUT_FILE', default=None)
     parser.add_argument('-delay', '--delay',
                         help='Delay between page loads', type=float, required=False, default=1.1)
     parser.add_argument('-strip', '--strip',
