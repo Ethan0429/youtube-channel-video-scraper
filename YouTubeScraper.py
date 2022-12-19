@@ -8,7 +8,7 @@ import argparse
 
 
 class YouTubeScraper:
-    def __init__(self, channel_id, driver_path, output_file, headless, delay, strip_special_characters):
+    def __init__(self, channel_id, driver_path, output_file, headless=True, delay=1.1, strip_special_characters=False):
         self.channel_id = channel_id
         self.output_file = output_file
         self.delay = delay
