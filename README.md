@@ -59,9 +59,23 @@ In total there are 6 arguments, only 2 of which are required.
 * `-strip, --strip` - Strip special characters from the video titles. This is useful if you're planning on using the output in a CSV file. Doesn't cover all bases, but it does the job for me. I don't recommend you use it since it's not perfect, AND it's mostly for my own purposes.
 * `-head, --head` - Run the driver without headless mode. Useful for debugging.
 
+#### Example
+
+```bash
+python3 YouTubeScraper.py UC_x5XG1OV2P6uZZ5FSM9Ttw chromedriver -o output.csv -delay 1.5 -head
+```
+
+#### Poetry Example
+
+```bash
+poetry run python3 YouTubeScraper.py UC_x5XG1OV2P6uZZ5FSM9Ttw chromedriver -o output.csv
+```
+
 ### API
 
 The script can also be imported into your own project. The `YouTubeScraper` class is the main class. It has one exposed method, `scrape`. It takes all the arguments listed in [CLI/Args](#Help), and returns a list of `Video` objects.
+
+#### Example
 
 ```python
 from YouTubeScraper import YouTubeScraper
