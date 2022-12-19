@@ -65,6 +65,10 @@ The script can also be imported into your own project. The `YouTubeScraper` clas
 
 ```python
 from YouTubeScraper import YouTubeScraper
+from selenium import webdriver
+
+channel_id = "UC_x5XG1OV2P6uZZ5FSM9Ttw" # YouTube channel ID
+driver_path = "chromedriver" # Path to chromedriver executable
 
 scraper = YouTubeScraper(channel_id, driver) # Create a new scraper object
 scraper.scrape() # Scrape the channel
