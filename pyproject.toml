@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "youtube-channel-video-scraper"
+version = "0.1.0"
+description = "Grabs all YouTube video links/titles belonging to a specific channel"
+authors = ["Ethan Rickert <ethanrickert0429@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+selenium = "^4.7.2"
+
+
+[tool.poetry.group.dev.dependencies]
+autopep8 = "^2.0.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
